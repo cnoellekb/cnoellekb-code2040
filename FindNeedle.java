@@ -36,6 +36,25 @@ public class FindNeedle {
         return index;
     }
 
+    /**Extracts a needle from a haystack in the form of an
+     * array that can be iterated.
+     * @param hay the haystack
+     * @param needle the needle
+     * @return the position of the needle
+     */
+    public int findNeedle(String[] haystack, String needle) {
+        int index = -1;
+
+        for (String h : haystack) {
+            index++;
+            if (h.equals(needle)) {
+                break;
+            }
+        }
+
+        return index;
+    }
+
     /**Extracts a needle from a haystack in the form of a
      * Collection that can be iterated.
      * @param hay the haystack
